@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Temperature(cel) {
+        this.cel=cel;
+        this.convertFah=function() {
+            return cel*1.8+32
+        };
+        this.convertKen=function() {
+            return cel+273
+        }
+    }
+    let tem= new Temperature(25)
+   document.write("gia tri do F sau khi chuyen doi la: " +tem.convertFah()+"<br>");
+    document.write("gia tri do kenvin sau khi chuyen doi la : "+tem.convertKen());
+</script>
+</body>
+</html>
